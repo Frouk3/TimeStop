@@ -9,7 +9,7 @@ DWORD WINAPI thing(LPVOID) noexcept
     while (true)
     {
         static bool TimeStopEnabled = false;
-        GameMenuStatus GameState = *(GameMenuStatus*)(base + 0x19D509C);
+        GameMenuStatus GameState = *(GameMenuStatus*)(base + 0x17E9F9C);
         bool IsForegroundWindow = *(bool*)(base + 0x19D509C);
         if ((GetAsyncKeyState(84) & 1) && GameState == InGame && IsForegroundWindow)
         {
